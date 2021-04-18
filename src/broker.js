@@ -26,15 +26,14 @@ const broker = {
     broker.aedes.authenticate = (client, username, password, cb) => {
       try {
         if (!username || !password) throw new Error('Credenciais incompletas')
-        if 
       } catch (e) {
         logger.error(e);
       }
   }
 }
 
-broker.setAuth = () => {
-  broker.aedes.authenticate = (client, username, password, cb) => {
-    if()
-  }
-}
+// broker.setAuth = () => {
+//   broker.aedes.authenticate = (client, username, password, cb) => {
+//     if()
+//   }
+// }
